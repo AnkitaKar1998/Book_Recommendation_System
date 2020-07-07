@@ -1,0 +1,103 @@
+.head_section {
+    width: 100%;
+    padding: 5px 0;
+    background-color: black;
+    border-radius: 8px;
+}
+
+h1 {
+	text-align: center;
+	margin: 10px 0 20px;
+    color: white;
+    font-size: 35px;
+	font-family: 'Cherry Swash', cursive;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.book_details {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #3498db;
+    padding: 10px;
+}
+
+
+.arrange_horizontal > * {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.book_text_details {
+    position: absolute;
+    text-align: left;
+}
+
+#current_book_title {
+    font-size: 25px;
+}
+
+#current_book_author {
+    font-size: 20px;
+}
+
+
+.recommended_books {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.inner_div {
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #e74c3c;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.grid_container {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    text-align: center;
+}
+
+.grid_item {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+#book_title {
+    font-size: 18px;
+}
+
+#book_author {
+    font-size: 15px;
+}
+
+#book_publisher {
+    font-size: 15px;
+    font-style: italic;
+}
+
+.view_button {
+    width: 70px;
+    height: 30px; 
+    color:white; 
+    background-color:#3498db;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}

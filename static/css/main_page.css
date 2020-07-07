@@ -1,0 +1,179 @@
+.head_section {
+    width: 100%;
+	background-color: black;
+	padding-bottom: 10px;
+	border-radius: 8px;
+	font-size: 0;
+}
+
+nav {
+	margin: 27px auto 0;
+	position: relative;
+	width: 320px;
+	height: 50px;
+	/* background-color: #34495e; */
+}
+
+
+nav a {
+	line-height: 50px;
+    height: 100%;
+    font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+nav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+a:nth-child(1) {
+	width: 100px;
+}
+a:nth-child(2) {
+	width: 110px;
+}
+a:nth-child(3) {
+	width: 100px;
+}
+a:nth-child(4) {
+	width: 160px;
+}
+a:nth-child(5) {
+	width: 120px;
+}
+nav .start-home, a:nth-child(1):hover~.animation {
+	width: 100px;
+	left: 0;
+	background-color: #3498db;
+}
+nav .start-all_books, a:nth-child(2):hover~.animation {
+	width: 110px;
+	left: 100px;
+	background-color: #e74c3c;
+}
+nav .start-about, a:nth-child(3):hover~.animation {
+	width: 100px;
+	left: 210px;
+	background-color: #1abc9c;
+}
+nav .start-portefolio, a:nth-child(4):hover~.animation {
+	width: 160px;
+	left: 310px;
+	background-color: #9b59b6;
+}
+nav .start-contact, a:nth-child(5):hover~.animation {
+	width: 120px;
+	left: 470px;
+	background-color: #e67e22;
+}
+
+
+h1 {
+	text-align: center;
+	margin: 10px 0 20px;
+	text-align: center;
+	font-size: 35px;
+	font-family: 'Cherry Swash', cursive;
+	color: white;
+}
+
+h2 {
+	margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.outer_div {
+    padding: 10px;
+}
+
+.popular_books {
+    margin-left: 10px;
+	margin-right: 10px;
+	border-style: solid;
+    border-radius: 10px;
+    border-color: #e74c3c;
+}
+
+.all_books {
+    margin-left: 10px;
+	margin-right: 10px;
+	border-style: solid;
+    border-radius: 10px;
+    border-color: #9b59b6;
+}
+
+.grid_container {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    text-align: center;
+}
+
+.grid_item {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+.view_button {
+    width: 70px;
+    height: 30px; 
+    color:white; 
+	background-color:#3498db;
+	outline: none;
+    border: none;
+	border-radius: 10px;
+    cursor: pointer;
+}
+
+#book_title {
+    font-size: 18px;
+}
+
+#book_author {
+    font-size: 15px;
+}
+
+#book_publisher {
+    font-size: 15px;
+    font-style: italic;
+}
+
+
+.about {
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 20px;
+	border-style: solid;
+    border-radius: 10px;
+    border-color: #e67e22;
+}
+
+.list_item {
+	margin: 10px;
+}
+
+ul {
+	list-style: none;
+}
+
+ul li::before {
+	content: "\25CF";
+	color: #3498db;
+	font-weight: bold;
+	display: inline-block; 
+	width: 1em;
+	margin-left: -1em;
+}

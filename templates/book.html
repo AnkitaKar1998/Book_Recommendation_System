@@ -1,0 +1,76 @@
+<html>
+
+    <head>
+        <title> Book Recommendation Website </title>
+
+        <link href="../static/css/book.css" rel="stylesheet" type="text/css"/>
+        <link rel = "icon" href =  "../static/images/favicon.ico" type = "image/x-icon">
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
+        <script type='text/javascript'>
+            $(document).ready(function() {
+                $('button').click(function(event){
+                    var book_isbn = $(this).attr('value');
+                    $.ajax({
+                    url: "/recommend",
+                    type: "get",
+                    data: {book_isbn: book_isbn},
+                    success: function(response) {
+                        // $('user_results').html(response);
+                        window.location.assign('/book/'+book_isbn)
+                    },
+                    error: function(error) {
+                        //Do Something to handle error
+                        console.log(error)
+                    }
+                    });
+                });
+            });
+
+
+        </script>
+    </head>
+
+    <body>
+
+        <!-- Heading Section -->
+        <div class='head_section'>
+            <a href='/'> <img src='../static/images/home.png' width='45' height='45'  style='float: left; margin-left: 15px; margin-top: 15px;'> </a>
+            <h1> Book Recommendation System </h1>
+        </div>
+
+        <!-- Book Detail Section -->
+        <div class='book_details'>
+            <div class='arrange_horizontal'>
+                <div>
+                    <img src='{{book_details["Image_Large"]}}' width='200' height='300'>
+                </div>
+                <div class='book_text_details'>
+                    <h2 id='current_book_title'> {{book_details['Book_Title']}} </h2>
+                    <p id='current_book_author'> Author: {{book_details['Book_Author']}} </p>
+                    <p id='current_book_year_of_publication'> Year of Publication: {{book_details['Year_Of_Publication']}} </p>
+                    <p id='current_book_publisher'> Publisher: {{book_details['Book_Publisher']}} </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recommendation Section -->
+        <div class='recommended_books'>
+            <h2> Recommended Books </h2>
+            <div class='inner_div'>
+                <div class='grid_container'>
+                    {%for i in range(recommended_books_len)%}
+                        <div class='grid_item'>
+                            <img src='{{recommended_books[i]["Image_Medium"]}}'>
+                            <p id='book_title'> {{recommended_books[i]['Book_Title']}} </p>
+                            <p id='book_author'> {{recommended_books[i]['Book_Author']}} </p>
+                            <p id='book_publisher'> {{recommended_books[i]['Book_Publisher']}} </p>
+                            <button class='view_button' id='{{i}}' value='{{recommended_books[i]["ISBN"]}}'> View </button>
+                        </div>
+                    {%endfor%}
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

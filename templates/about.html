@@ -1,0 +1,64 @@
+<html>
+
+    <head>
+        <link href="../static/css/main_page.css" rel="stylesheet" type="text/css"/>
+        <link rel = "icon" href =  "../static/images/favicon.ico" type = "image/x-icon">
+
+        <title> Book Recommendation Website </title>
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
+        <script type='text/javascript'>
+            $(document).ready(function() {
+                $('button').click(function(event){
+                    var book_isbn = $(this).attr('value');
+                    $.ajax({
+                    url: "/recommend",
+                    type: "get",
+                    data: {book_isbn: book_isbn},
+                    success: function(response) {
+                        // $('user_results').html(response);
+                        window.location.assign('book/'+book_isbn)
+                    },
+                    error: function(error) {
+                        //Do Something to handle error
+                        console.log(error)
+                    }
+                    });
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+
+        <!-- Heading Section -->
+        <div class='head_section'>
+            <h1> Book Recommendation System </h1>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/all_books">All Books</a>
+                <a href="#">About</a>
+                <div class="animation start-about"></div>
+            </nav>
+        </div>
+
+        <!-- About Section -->
+        <div class='outer_div'>
+            <h2> About Project </h2>
+            <div class="about">
+                <ul>
+                    <li class='list_item'> This book recommendation project is a mini project implemented using the Book Crossing Data available <a href='http://www2.informatik.uni-freiburg.de/~cziegler/BX/'> here</a>. </li>
+                    <li class='list_item'> On viewing a apecific book, details of that book and list of recommended books is shown to the user.</li>
+                    <li class='list_item'> Hybrid recommendation algorithms are used in this project which include Collaborative Filtering using Pearson Correlation as well as KNN algorithm and Content Based recommendation algorithm.  </li>
+                    <li class='list_item'> Since this is a mini project for demonstration, user login data as well as user view history data is not maintained. </li>
+                    <li class='list_item'> The recommendation of each book viewed is based only on the ratings of users and other features of that book in the dataset. Current user view actions are not saved and hence not considered for recommendation. </li>
+                    <li class='list_item'> The project can be further extended by creating a register/login system and a rating system where the logged in users can give rating to each book. The recommendations can be then be evaluated based user history and new ratings. </li>
+                    <li class='list_item'> The source code of the project is available in my GitHub repository <a href='https://github.com/AnkitaKar1998/Book_Recommendation_System'> here</a>.</li>
+                </ul>
+            </div>
+        </div>
+        
+
+
+    </body>
+</html>

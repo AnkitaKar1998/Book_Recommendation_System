@@ -181,7 +181,7 @@ ul li::before {
 
 @media screen and (max-width: 480px) {
 	.outer_div {
-		width: 85%;
+		max-width: 480px;
 	}
 
 	.grid_container {

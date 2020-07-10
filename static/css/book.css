@@ -106,11 +106,11 @@ h2 {
 
 @media screen and (max-width: 480px) {
 	.recommended_books {
-		width: 480px;
+		width: 85%;
     }
     
     .book_details {
-		width: 480px;
+		width: 85%;
 	}
 
 	.grid_container {

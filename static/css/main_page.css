@@ -79,7 +79,6 @@ nav .start-contact, a:nth-child(5):hover~.animation {
 
 
 h1 {
-	text-align: center;
 	margin: 10px 0 20px;
 	text-align: center;
 	font-size: 35px;
@@ -176,4 +175,16 @@ ul li::before {
 	display: inline-block; 
 	width: 1em;
 	margin-left: -1em;
+}
+
+
+
+@media screen and (max-width: 480px) {
+	.outer_div {
+		width: 480px;
+	}
+
+	.grid_container {
+		grid-template-columns: auto auto;
+	}
 }

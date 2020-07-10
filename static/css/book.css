@@ -101,3 +101,19 @@ h2 {
     border-radius: 10px;
     cursor: pointer;
 }
+
+
+
+@media screen and (max-width: 480px) {
+	.recommended_books {
+		width: 480px;
+    }
+    
+    .book_details {
+		width: 480px;
+	}
+
+	.grid_container {
+		grid-template-columns: auto auto;
+	}
+}

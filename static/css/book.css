@@ -115,9 +115,13 @@ h2 {
     
     .book_details {
 		max-width: 480px;
-	}
+    }
+    
+    .arrange_horizontal {
+        display: none;
+    }
 
 	.grid_container {
-		grid-template-columns: auto auto;
+		grid-template-columns: auto;
 	}
 }

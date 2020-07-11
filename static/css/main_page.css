@@ -190,6 +190,6 @@ ul li::before {
 	}
 
 	.grid_container {
-		grid-template-columns: auto auto;
+		grid-template-columns: auto;
 	}
 }

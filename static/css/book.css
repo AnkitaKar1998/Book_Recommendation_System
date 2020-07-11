@@ -105,6 +105,10 @@ h2 {
 
 
 @media screen and (max-width: 480px) {
+    .head_section {
+        max-width: 480px;
+    }
+
 	.recommended_books {
 		max-width: 480px;
     }

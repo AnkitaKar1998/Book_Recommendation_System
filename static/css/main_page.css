@@ -180,6 +180,11 @@ ul li::before {
 
 
 @media screen and (max-width: 480px) {
+
+	.head_section {
+		max-width: 480px;
+	}
+
 	.outer_div {
 		max-width: 480px;
 	}

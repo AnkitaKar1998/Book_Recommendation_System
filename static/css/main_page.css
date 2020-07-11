@@ -190,9 +190,9 @@ ul li::before {
 	}
 
 	.grid_container {
-		width: 480px;
-		display: block;
-		/* grid-template-columns: auto; */
+		/* width: 480px;
+		display: block; */
+		grid-template-columns: auto;
 	}
 
 	.grid_item {

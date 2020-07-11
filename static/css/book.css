@@ -118,11 +118,11 @@ h2 {
     }
     
     .arrange_horizontal {
-        display: none;
+        display: block;
     }
 
 	.grid_container {
-        display: none;
+        display: block;
 		/* grid-template-columns: auto; */
     }
     

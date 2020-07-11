@@ -122,6 +122,11 @@ h2 {
     }
 
 	.grid_container {
-		grid-template-columns: auto;
-	}
+        display: none;
+		/* grid-template-columns: auto; */
+    }
+    
+    .grid_item {
+        width: 250px;
+    }
 }

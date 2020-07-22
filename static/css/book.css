@@ -117,14 +117,12 @@ h2 {
 		max-width: 480px;
     }
     
-    .arrange_horizontal {
+    .arrange_horizontal > *{
         width: 480px;
-        display: block;
+        display: n;
     }
 
 	.grid_container {
-        /* width: 480px;
-        display: block; */
 		grid-template-columns: auto;
     }
     

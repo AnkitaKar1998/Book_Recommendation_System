@@ -119,7 +119,7 @@ h2 {
     
     .arrange_horizontal > *{
         width: 480px;
-        display: n;
+        display: block;
     }
 
 	.grid_container {

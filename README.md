@@ -4,6 +4,7 @@
 <li> This project is implemented as a website which shows recommended books when the user selects a particular book.
 <li> Website link: <i>https://ml-book-recommendation-system.herokuapp.com/</i>
 <li> This is a hybrid recommendation system in which three different algorithm is used: Collaborative Filtering using Pearson Corelation, Vollaborative Filtering using KNN and Content Based algorithm.
+<li> For demo of this project refer <b><i>Book_Recommendation_Demo.mp4</i></b> file.
 <li> Book Crossing Dataset is used for this project which can be found here <i>http://www2.informatik.uni-freiburg.de/~cziegler/BX/</i>
 </ul>
 
@@ -15,7 +16,7 @@
 
         pip install Flask
 
-<li> Open the project dolder. Open command prompt/terminal.
+<li> Open the project folder. Open command prompt/terminal.
 <li> Run app.py file.
 </ol>
 

@@ -24,5 +24,5 @@
 
 <ul>
 <li> The recommendation of each book viewed is based only on the ratings of users and other features of that book in the dataset. Current user view actions are not saved and hence not considered for recommendation.
-<li> The project can be further extended by creating a register/login system and a rating system where the logged in users can give rating to each book. The recommendations can then be evaluated based user history and new ratings.
+<li> The project can be further extended by creating a register/login system and a rating system where the logged in users can give rating to each book. The recommendations can then be evaluated based on user view history and new ratings.
 </ul>
